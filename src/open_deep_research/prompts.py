@@ -74,6 +74,15 @@ Guidelines:
 - For academic or scientific queries, prefer linking directly to the original paper or official journal publication rather than survey papers or secondary summaries.
 - For people, try linking directly to their LinkedIn profile, or their personal website if they have one.
 - If the query is in a specific language, prioritize sources published in that language.
+
+Return the result as a valid JSON object with exactly this structure:
+{{
+  "research_brief": "<the detailed research question>"
+}}
+
+The key must be exactly "research_brief". Never use "research_question"
+or any other key.
+Do not include Markdown code fences or text outside the JSON object.
 """
 
 lead_researcher_prompt = """You are a research supervisor. Your job is to conduct research by calling the "ConductResearch" tool. For context, today's date is {date}.

@@ -74,6 +74,7 @@ Open Deep Research 是一个可配置、完全开源的深度研究智能体(dee
 3. 执行 `git status --short`，保留用户已有及无关改动。
 4. 一次只处理一个功能（One feature at a time）。
 5. 运行 `./init.sh`；若基线失败，先记录证据再修改。
+6. 所有命令都倾向于使用conda或langgraph原生命令，用户天然排除uv命令
 
 缺少开发依赖时执行 `uv sync --extra dev`。
 
